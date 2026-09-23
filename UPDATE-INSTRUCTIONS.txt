@@ -25,3 +25,7 @@ INSTALL:
    git push origin main
 
 No package installation is required for this update.
+
+
+MUSIC REMOVAL:
+MusicToggle, its audio playback, button, and related CSS have been completely removed.

@@ -6,7 +6,6 @@ import EventDetails from './components/EventDetails.jsx'
 import Venue from './components/Venue.jsx'
 import Closing from './components/Closing.jsx'
 import FamilyGreetings from './components/FamilyGreetings.jsx'
-import MusicToggle from './components/MusicToggle.jsx'
 import Reveal from './components/Reveal.jsx'
 
 export default function App() {
@@ -28,7 +27,6 @@ export default function App() {
         <Reveal delay="100ms"><FamilyGreetings /></Reveal>
         <Reveal delay="120ms"><Closing /></Reveal>
       </main>
-      <MusicToggle />
     </div>
   )
 }
