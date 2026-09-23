@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Shiba and Adheeb//Wedding Invitation//EN
+BEGIN:VEVENT
+UID:shiba-adheeb-wedding-20261223@example.com
+DTSTAMP:20260923T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Wedding of Dr. Shiba CMP & Dr. Adheeb Mohamedali C V
+DESCRIPTION:Wedding of Dr. Shiba CMP and Dr. Adheeb Mohamedali C V. Your presence and prayers are warmly invited.
+LOCATION:Bianco Castle, Tirur
+END:VEVENT
+END:VCALENDAR
