@@ -1,0 +1,27 @@
+SHIBA × ADHEEB — MOBILE + ANIMATION REDESIGN
+
+This update preserves the existing wedding content and functionality.
+Changed:
+- Mobile-first opening gate alignment
+- More reference-like luxury arch layout
+- Improved couple typography
+- Decorative botanical/ornamental elements
+- Cinematic opening-panel transition
+- Scroll-triggered reveal animations
+- Subtle floating decorative motion
+- Better mobile spacing and no horizontal overflow
+- Countdown, venue, family greetings and closing remain functional
+
+INSTALL:
+1. Extract this ZIP.
+2. Copy the CONTENTS of the extracted folder into:
+   C:\Users\HP\Desktop\wedding-invitation
+3. Choose Replace when Windows asks.
+4. Run:
+   npm run build
+5. If successful:
+   git add .
+   git commit -m "Improve mobile wedding invitation animations"
+   git push origin main
+
+No package installation is required for this update.
