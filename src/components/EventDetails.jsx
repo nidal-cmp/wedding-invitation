@@ -4,7 +4,7 @@ export default function EventDetails() {
   return (
     <section className="details" id="details">
       <div className="details-inner">
-        <p className="eyebrow">Mark the day</p>
+        <p className="eyebrow">Save the date</p>
         <h2 className="script-title">23.12.2026</h2>
         <div className="details-line"><span>WEDNESDAY</span><b>✦</b><span>BIANCO CASTLE · TIRUR</span></div>
         <a className="calendar-button" href={GOOGLE_CALENDAR_URL} target="_blank" rel="noreferrer">＋ Add to Google Calendar</a>

@@ -15,7 +15,6 @@ function getTimeLeft() {
 
 export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft())
-
   useEffect(() => {
     const id = setInterval(() => setTimeLeft(getTimeLeft()), 1000)
     return () => clearInterval(id)
@@ -24,21 +23,16 @@ export default function Countdown() {
   return (
     <section className="countdown" id="countdown">
       <div className="countdown-inner">
-        <p className="eyebrow">Until 23.12.2026</p>
-        <h2 className="script-title light">The countdown begins</h2>
-        {timeLeft ? (
-          <div className="countdown-grid">
-            <Unit value={timeLeft.days} label="Days" />
-            <Unit value={timeLeft.hours} label="Hours" />
-            <Unit value={timeLeft.minutes} label="Minutes" />
-            <Unit value={timeLeft.seconds} label="Seconds" />
-          </div>
-        ) : <p className="countdown-complete">Our special day has arrived.</p>}
+        <p className="eyebrow">Counting down to 23.12.2026</p>
+        <h2 className="script-title light">Our Special Day</h2>
+        {timeLeft ? <div className="countdown-grid">
+          <Unit value={timeLeft.days} label="Days" />
+          <Unit value={timeLeft.hours} label="Hours" />
+          <Unit value={timeLeft.minutes} label="Minutes" />
+          <Unit value={timeLeft.seconds} label="Seconds" />
+        </div> : <p className="countdown-complete">Our special day has arrived.</p>}
       </div>
     </section>
   )
 }
-
-function Unit({ value, label }) {
-  return <div className="countdown-unit"><strong>{String(value).padStart(2, '0')}</strong><span>{label}</span></div>
-}
+function Unit({ value, label }) { return <div className="countdown-unit"><strong>{String(value).padStart(2, '0')}</strong><span>{label}</span></div> }
