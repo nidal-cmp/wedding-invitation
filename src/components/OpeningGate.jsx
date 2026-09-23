@@ -1,22 +1,32 @@
 export default function OpeningGate({ open, onEnter }) {
   return (
-    <section className={`gate ${open ? 'gate--closed' : ''}`} aria-hidden={open}>
+    <section className={`gate ${open ? 'gate--closing' : ''}`} aria-hidden={open}>
+      <div className="gate-noise" aria-hidden="true" />
       <div className="gate-frame" aria-hidden="true" />
-      <div className="gate-ornament gate-ornament--top" aria-hidden="true">✦</div>
-      <div className="gate-ornament gate-ornament--bottom" aria-hidden="true">✦</div>
+      <div className="gate-corner gate-corner--tl" aria-hidden="true">❧</div>
+      <div className="gate-corner gate-corner--tr" aria-hidden="true">❧</div>
+      <div className="gate-corner gate-corner--bl" aria-hidden="true">❧</div>
+      <div className="gate-corner gate-corner--br" aria-hidden="true">❧</div>
 
-      <div className="monogram" aria-label="Shiba and Adheeb">
-        <span className="monogram-s">S</span>
-        <span className="monogram-amp">&amp;</span>
-        <span className="monogram-a">A</span>
+      <div className="gate-petals" aria-hidden="true">
+        <span>❧</span><span>✦</span><span>❧</span><span>✦</span><span>❧</span>
+        <span>✦</span><span>❧</span><span>✦</span>
       </div>
 
-      <div className="gate-botanical gate-botanical--left" aria-hidden="true">❧</div>
-      <div className="gate-botanical gate-botanical--right" aria-hidden="true">❧</div>
+      <div className="gate-monogram-wrap">
+        <div className="gate-floral gate-floral--left" aria-hidden="true">❧</div>
+        <div className="gate-floral gate-floral--right" aria-hidden="true">❧</div>
+        <div className="gate-monogram" aria-label="S and A">
+          <span className="gate-s">S</span>
+          <span className="gate-a">A</span>
+          <span className="gate-amp">&amp;</span>
+        </div>
+      </div>
 
       <button className="gate-button" onClick={onEnter} type="button">
-        <span>Open Invitation</span>
-        <b aria-hidden="true">→</b>
+        <span className="gate-button-line" aria-hidden="true" />
+        <span>TAP TO OPEN</span>
+        <span className="gate-arrow" aria-hidden="true">↓</span>
       </button>
     </section>
   )

@@ -25,10 +25,10 @@ export default function CompactInvitation() {
 
   return (
     <div className="compact-invitation">
-      <section className="hero-section" id="home">
-        <div className="hero-arch" aria-hidden="true" />
-        <div className="hero-leaf hero-leaf--one" aria-hidden="true">❧</div>
-        <div className="hero-leaf hero-leaf--two" aria-hidden="true">❧</div>
+      <section className="hero-section parallax-section" id="home">
+        <div className="hero-arch parallax-slow" aria-hidden="true" />
+        <div className="hero-leaf hero-leaf--one parallax-fast" aria-hidden="true">❧</div>
+        <div className="hero-leaf hero-leaf--two parallax-slow" aria-hidden="true">❧</div>
 
         <div className="hero-content reveal-on-scroll">
           <p className="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ</p>
@@ -57,8 +57,8 @@ export default function CompactInvitation() {
         </div>
       </section>
 
-      <section className="quick-info">
-        <div className="countdown-mini reveal-on-scroll">
+      <section className="quick-info scroll-stage">
+        <div className="countdown-mini reveal-on-scroll scale-reveal">
           <div>
             <span>COUNTING DOWN</span>
             <strong>Our Special Day</strong>
@@ -75,7 +75,7 @@ export default function CompactInvitation() {
           )}
         </div>
 
-        <div className="event-card reveal-on-scroll">
+        <div className="event-card reveal-on-scroll slide-reveal">
           <div className="event-item">
             <span className="event-label">DATE</span>
             <strong>23.12.2026</strong>
@@ -89,7 +89,7 @@ export default function CompactInvitation() {
           </div>
         </div>
 
-        <div className="actions reveal-on-scroll">
+        <div className="actions reveal-on-scroll rise-reveal">
           <a className="primary-action" href={MAPS_URL} target="_blank" rel="noreferrer">
             Open in Google Maps <span>↗</span>
           </a>
@@ -99,13 +99,13 @@ export default function CompactInvitation() {
         </div>
       </section>
 
-      <section className="greeting-section reveal-on-scroll">
+      <section className="greeting-section reveal-on-scroll handwritten-reveal">
         <div className="gold-rule"><i /><b>✦</b><i /></div>
         <p className="eyebrow">Best regards from</p>
         <p className="greeting-script">Shamna, Sahla, Rashid,<br />Kith and Kin</p>
       </section>
 
-      <section className="closing-section">
+      <section className="closing-section cinematic-close">
         <div className="closing-frame">
           <p className="closing-label">With love, prayers &amp; gratitude</p>
           <p className="closing-note">May Allah bless their union and fill their lives with love, peace and barakah.</p>
