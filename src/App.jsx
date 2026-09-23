@@ -5,6 +5,7 @@ import Countdown from './components/Countdown.jsx'
 import EventDetails from './components/EventDetails.jsx'
 import Venue from './components/Venue.jsx'
 import Closing from './components/Closing.jsx'
+import FamilyGreetings from './components/FamilyGreetings.jsx'
 import MusicToggle from './components/MusicToggle.jsx'
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <Countdown />
         <EventDetails />
         <Venue />
+        <FamilyGreetings />
         <Closing />
       </main>
       <MusicToggle />

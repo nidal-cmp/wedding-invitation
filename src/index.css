@@ -164,3 +164,163 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Family greetings — warm personal closing note */
+.family-greetings {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4rem, 9vw, 6.5rem) 1.25rem;
+  text-align: center;
+  background: var(--paper);
+  isolation: isolate;
+}
+
+.family-greetings::before {
+  content: '';
+  position: absolute;
+  width: min(520px, 75vw);
+  height: min(520px, 75vw);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(195, 154, 82, .12);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.family-greetings-inner {
+  position: relative;
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+.family-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  margin: 0 auto 1.35rem;
+}
+
+.family-ornament span {
+  display: block;
+  width: clamp(45px, 12vw, 110px);
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 1s cubic-bezier(.22, 1, .36, 1);
+}
+
+.family-ornament b {
+  color: var(--gold);
+  font-size: .8rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: scale(.7);
+  transition: opacity .7s ease .35s, transform .7s ease .35s;
+}
+
+.family-greetings-label {
+  margin: 0;
+  color: var(--burgundy);
+  font-family: var(--sans);
+  font-size: .62rem;
+  font-weight: 500;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .8s ease .25s, transform .8s ease .25s;
+}
+
+.family-greetings-names {
+  margin: 1rem auto 0;
+  color: var(--green-dark);
+  font-family: var(--script);
+  font-size: clamp(2.65rem, 6vw, 4.6rem);
+  line-height: 1.08;
+  font-weight: 400;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(22px);
+  transition: opacity 1s ease .5s, filter 1s ease .5s, transform 1s cubic-bezier(.22, 1, .36, 1) .5s;
+}
+
+.family-botanical {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: rgba(48, 76, 61, .18);
+  font-size: clamp(4rem, 9vw, 6rem);
+}
+
+.family-botanical span {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease 1s, transform 1.2s ease 1s;
+}
+
+.family-botanical span:first-child {
+  left: 0;
+  bottom: 0;
+  transform: translateX(-18px) rotate(-22deg);
+}
+
+.family-botanical span:last-child {
+  right: 0;
+  top: 0;
+  transform: translateX(18px) rotate(158deg) scaleX(-1);
+}
+
+.family-greetings.is-visible .family-ornament span {
+  transform: scaleX(1);
+}
+
+.family-greetings.is-visible .family-ornament b {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.family-greetings.is-visible .family-greetings-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.family-greetings.is-visible .family-greetings-names {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.family-greetings.is-visible .family-botanical span {
+  opacity: 1;
+  transform: translateX(0) rotate(-22deg);
+}
+
+.family-greetings.is-visible .family-botanical span:last-child {
+  transform: translateX(0) rotate(158deg) scaleX(-1);
+}
+
+@media (max-width: 500px) {
+  .family-greetings {
+    padding: 4rem 1rem 4.5rem;
+  }
+
+  .family-greetings-label {
+    font-size: .56rem;
+    letter-spacing: .25em;
+  }
+
+  .family-greetings-names {
+    font-size: clamp(2.35rem, 12vw, 3.3rem);
+  }
+
+  .family-break {
+    display: none;
+  }
+
+  .family-botanical {
+    font-size: 4rem;
+  }
+}
