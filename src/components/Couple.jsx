@@ -6,14 +6,14 @@ export default function Couple() {
     <section className="section names-section" ref={ref}>
       <div className={`reveal ${visible ? 'is-visible' : ''}`}>
         <p className="eyebrow">A beautiful beginning</p>
-        <h2 className="section-title">Two families, one celebration</h2>
+        <h2 className="section-title">Two hearts, two families, one celebration</h2>
         <div className="name-cards">
           <article className="name-card">
             <span className="card-kicker">The Bride</span>
             <h3>Dr. Shiba CMP</h3>
             <p>Daughter of<br />C M P Yousef &amp; Raihana Edavath</p>
           </article>
-          <div className="name-heart">♡</div>
+          <div className="name-heart" aria-hidden="true">♡</div>
           <article className="name-card">
             <span className="card-kicker">The Groom</span>
             <h3>Dr. Adheeb Mohamedali C V</h3>

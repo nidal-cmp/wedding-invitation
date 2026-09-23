@@ -5,11 +5,12 @@ export default function Closing() {
   return (
     <section className="closing" ref={ref}>
       <div className={`closing-inner reveal ${visible ? 'is-visible' : ''}`}>
-        <p className="eyebrow">We look forward to</p>
+        <p className="eyebrow">Until we meet on our special day</p>
         <h2 className="script-title">Your Presence</h2>
-        <div className="divider"><span /><b>♡</b><span /></div>
-        <p className="body-copy">Your presence and prayers would mean the world to us as we begin this new journey together.</p>
-        <p className="closing-names">Shiba &amp; Adheeb</p>
+        <div className="divider"><span /><b>✦</b><span /></div>
+        <p className="body-copy">Your presence, prayers and blessings will make our celebration even more meaningful.</p>
+        <p className="closing-names">Shiba <span>&amp;</span> Adheeb</p>
+        <p className="closing-date">23 · 12 · 2026</p>
       </div>
     </section>
   )

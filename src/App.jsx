@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import OpeningGate from './components/OpeningGate.jsx'
 import Hero from './components/Hero.jsx'
 import Invitation from './components/Invitation.jsx'
 import Couple from './components/Couple.jsx'
@@ -12,14 +10,11 @@ import Footer from './components/Footer.jsx'
 import MusicToggle from './components/MusicToggle.jsx'
 
 export default function App() {
-  const [entered, setEntered] = useState(false)
-
   return (
     <div className="invitation">
-      <OpeningGate open={entered} onEnter={() => setEntered(true)} />
       <header className="topbar">
         <a className="monogram" href="#home" aria-label="Home">S <span>♡</span> A</a>
-        <nav>
+        <nav aria-label="Main navigation">
           <a href="#home">Home</a>
           <a href="#details">Details</a>
           <a href="#venue">Venue</a>
@@ -37,7 +32,7 @@ export default function App() {
         <Closing />
       </main>
       <Footer />
-      {entered && <MusicToggle />}
+      <MusicToggle />
     </div>
   )
 }
