@@ -1,0 +1,16 @@
+SHIBA × ADHEEB — FINAL DESIGN UPDATE
+
+This update follows the premium cream-first cinematic design direction:
+- cream/ivory dominant palette
+- champagne gold accents
+- muted burgundy and botanical green
+- editorial serif + script typography
+- cinematic opening/transition
+- scroll reveal animations
+- mobile-first layout
+- subtle paper texture and ornaments
+- family greetings preserved
+- existing wedding content/functionality preserved
+
+MUSIC:
+Music was intentionally removed in the user's latest request. MusicToggle and music controls are not included.
