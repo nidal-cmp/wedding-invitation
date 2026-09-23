@@ -1,16 +1,10 @@
-SHIBA × ADHEEB — FINAL DESIGN UPDATE
+SHIBA × ADHEEB — COMPACT MONOGRAM REDESIGN
 
-This update follows the premium cream-first cinematic design direction:
-- cream/ivory dominant palette
-- champagne gold accents
-- muted burgundy and botanical green
-- editorial serif + script typography
-- cinematic opening/transition
-- scroll reveal animations
-- mobile-first layout
-- subtle paper texture and ornaments
-- family greetings preserved
-- existing wedding content/functionality preserved
-
-MUSIC:
-Music was intentionally removed in the user's latest request. MusicToggle and music controls are not included.
+Latest requested structure:
+1. Opening screen: ONLY a creative S & A monogram plus Open Invitation.
+2. Main invitation: one compact continuous experience with names/parents, date, small countdown, venue, Google Maps, Google Calendar, family greeting and short closing.
+3. No separate full-screen countdown page.
+4. No repetitive sections.
+5. Mobile-first responsive layout with no horizontal overflow.
+6. Premium cream, burgundy, green and antique-gold aesthetic.
+7. Music remains completely removed.
