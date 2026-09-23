@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import useReveal from '../hooks/useReveal'
 
 const WEDDING_DATE = new Date('2026-12-23T11:00:00+05:30').getTime()
 
@@ -15,18 +14,18 @@ function getTimeLeft() {
 }
 
 export default function Countdown() {
-  const [ref, visible] = useReveal()
   const [timeLeft, setTimeLeft] = useState(getTimeLeft())
+
   useEffect(() => {
     const id = setInterval(() => setTimeLeft(getTimeLeft()), 1000)
     return () => clearInterval(id)
   }, [])
 
   return (
-    <section className="countdown" ref={ref}>
-      <div className={`countdown-inner reveal ${visible ? 'is-visible' : ''}`}>
-        <p className="eyebrow">Counting down to</p>
-        <h2 className="script-title light">Our Special Day</h2>
+    <section className="countdown" id="countdown">
+      <div className="countdown-inner">
+        <p className="eyebrow">Until 23.12.2026</p>
+        <h2 className="script-title light">The countdown begins</h2>
         {timeLeft ? (
           <div className="countdown-grid">
             <Unit value={timeLeft.days} label="Days" />
@@ -34,8 +33,7 @@ export default function Countdown() {
             <Unit value={timeLeft.minutes} label="Minutes" />
             <Unit value={timeLeft.seconds} label="Seconds" />
           </div>
-        ) : <p className="countdown-complete">May Allah bless our new beginning.</p>}
-        <p className="countdown-note">May Allah bless our union and fill it with love, peace and barakah.</p>
+        ) : <p className="countdown-complete">Our special day has arrived.</p>}
       </div>
     </section>
   )
