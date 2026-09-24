@@ -1,0 +1,6 @@
+Reference redesign applied to the uploaded project.
+Opening: minimal burgundy luxury card with central S&A emblem, gold frame/florals, TAP TO OPEN.
+Main: cream/ivory luxury invitation, script names, botanical accents, compact countdown, date/venue,
+Google Maps, Google Calendar, family greetings and closing.
+Music and .ics controls are removed.
+Responsive mobile layout and cinematic reveal animations are included.

@@ -1,32 +1,23 @@
 export default function OpeningGate({ open, onEnter }) {
   return (
-    <section className={`gate ${open ? 'gate--closing' : ''}`} aria-hidden={open}>
-      <div className="gate-noise" aria-hidden="true" />
-      <div className="gate-frame" aria-hidden="true" />
-      <div className="gate-corner gate-corner--tl" aria-hidden="true">❧</div>
-      <div className="gate-corner gate-corner--tr" aria-hidden="true">❧</div>
-      <div className="gate-corner gate-corner--bl" aria-hidden="true">❧</div>
-      <div className="gate-corner gate-corner--br" aria-hidden="true">❧</div>
-
-      <div className="gate-petals" aria-hidden="true">
-        <span>❧</span><span>✦</span><span>❧</span><span>✦</span><span>❧</span>
-        <span>✦</span><span>❧</span><span>✦</span>
-      </div>
-
-      <div className="gate-monogram-wrap">
-        <div className="gate-floral gate-floral--left" aria-hidden="true">❧</div>
-        <div className="gate-floral gate-floral--right" aria-hidden="true">❧</div>
-        <div className="gate-monogram" aria-label="S and A">
-          <span className="gate-s">S</span>
-          <span className="gate-a">A</span>
-          <span className="gate-amp">&amp;</span>
+    <section className={`gate ${open ? 'gate--closed' : ''}`} aria-hidden={open}>
+      <div className="gate-texture" />
+      <div className="gate-border" />
+      <div className="gate-botanical gate-botanical--tl">❧</div>
+      <div className="gate-botanical gate-botanical--tr">❧</div>
+      <div className="gate-botanical gate-botanical--bl">❧</div>
+      <div className="gate-botanical gate-botanical--br">❧</div>
+      <div className="gate-emblem">
+        <div className="gate-ring">
+          <span className="gate-monogram gate-monogram--s">S</span>
+          <span className="gate-monogram gate-monogram--a">A</span>
+          <span className="gate-monogram gate-monogram--amp">&amp;</span>
         </div>
+        <span className="gate-sprig gate-sprig--left">❧</span>
+        <span className="gate-sprig gate-sprig--right">❧</span>
       </div>
-
-      <button className="gate-button" onClick={onEnter} type="button">
-        <span className="gate-button-line" aria-hidden="true" />
-        <span>TAP TO OPEN</span>
-        <span className="gate-arrow" aria-hidden="true">↓</span>
+      <button className="gate-open" onClick={onEnter} type="button">
+        <span>TAP TO OPEN</span><i>↓</i>
       </button>
     </section>
   )

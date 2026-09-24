@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
  * Adds an 'is-visible' class once the element scrolls into view.
  * Pair with the .reveal CSS class in index.css.
  */
-export default function useReveal(threshold = 0.2) {
+export default function useReveal(threshold = 0.12) {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
 
@@ -19,7 +19,7 @@ export default function useReveal(threshold = 0.2) {
           observer.disconnect()
         }
       },
-      { threshold }
+      { threshold, rootMargin: '0px 0px -40px 0px' }
     )
 
     observer.observe(node)

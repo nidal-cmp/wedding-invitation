@@ -1,0 +1,20 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": [
+    {
+      "key": "envelope",
+      "input": "envelope.png",
+      "prompt": "Use case: text-localization. Asset type: website wedding envelope artwork. Input image 1 is the EDIT TARGET. Make one precise localized edit: replace the gold H upper-left with an uppercase S and replace the gold S lower-right with an uppercase A. Exact visible Latin letters must be S upper-left and A lower-right, set in the identical elegant metallic gold embossed serif style, size, diagonal placement, lighting and shadows of the original monogram. Preserve the original tall portrait aspect ratio and composition exactly: deep burgundy velvet envelope, all triangular overlapping flaps and their edges, shadows, fine textured surface, golden circular botanical wreath, branches, leaves, highlights, dimensions and positioning. Only change the two monogram letters. No ampersand, additional text, watermarks, or new graphic. Keep every other part as close to the original as possible."
+    },
+    {
+      "key": "invitation",
+      "input": "invitation.jpg",
+      "prompt": "Use case: precise-object-edit. Asset type: website wedding invitation background for later HTML text overlay. Input image 1 is the EDIT TARGET. Remove every Latin-alphabet text, every numeral, every ampersand and punctuation associated with the invitation wording, carefully restoring the underlying burgundy texture seamlessly. Remove all of: invitation wording, Hisham and Suhana, SON OF and DAUGHTER OF, parents names, all ampersands, date, Sunday, time, venue and address. The ONLY writing that must remain is the existing gold Arabic Bismillah calligraphy near the top; preserve that Arabic artwork unchanged in shape, position and appearance. Preserve the original portrait aspect ratio and exact composition: beige parchment outside, burgundy arch and its outline, all texture and lighting, white lily floral art at the bottom-left. After editing, the burgundy region below the Arabic calligraphy should have no letters, numerals or symbols whatsoever, leaving uninterrupted original burgundy texture ready for text overlay. Do not add any new text, decoration, graphic, or watermark. Keep all non-text artwork as close to the original as possible."
+    },
+    {
+      "key": "monogram",
+      "input": "monogram.png",
+      "prompt": "Use case: text-localization. Asset type: website wedding monogram artwork. Input image 1 is the EDIT TARGET. Make one precise localized edit: replace the metallic gold H upper-left with an uppercase S and replace the metallic gold S lower-right with an uppercase A. Exact visible letters: S upper-left and A lower-right. Match the original elegant metallic gold embossed serif typography, size, diagonal arrangement, highlights, bevels, lighting and shadows. Preserve the original square composition, white background and subtle background texture, circular gold botanical wreath with all its branches, leaves and berries, and all styling and placement. Change only the two monogram letters. No ampersand, other text, extra decoration, or watermark. Keep every other part as close to the original as possible."
+    }
+  ]
+}
