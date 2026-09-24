@@ -1,10 +1,13 @@
-import weddingMonogram from '../assets/wedding-monogram.jpeg'
+const weddingMonogram = `${import.meta.env.BASE_URL}wedding-monogram.jpeg`
 
 export default function OpeningGate({ open, onEnter }) {
   return (
     <section
       className={`gate ${open ? 'gate--closing' : ''}`}
       aria-hidden={open}
+      style={{
+        '--wedding-monogram': `url("${weddingMonogram}")`,
+      }}
     >
       <div className="gate-noise" aria-hidden="true" />
       <div className="gate-vignette" aria-hidden="true" />
@@ -24,9 +27,7 @@ export default function OpeningGate({ open, onEnter }) {
         aria-label="Open wedding invitation"
       >
         <span className="gate-button-line" aria-hidden="true" />
-
         <span>TAP TO OPEN</span>
-
         <span className="gate-arrow" aria-hidden="true">
           ↓
         </span>
