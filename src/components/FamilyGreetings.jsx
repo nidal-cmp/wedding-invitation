@@ -34,7 +34,7 @@ export default function FamilyGreetings() {
         <p className="family-greetings-label">BEST REGARDS FROM</p>
 
         <p className="family-greetings-names">
-          Shamna, Sahla, Rashid, Nahrin
+          Shamna, Sahla, Rashid, Nahrin,
           <br className="family-break" />
           Kith and Kin
         </p>

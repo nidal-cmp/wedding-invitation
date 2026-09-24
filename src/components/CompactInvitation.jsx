@@ -115,7 +115,6 @@ export default function CompactInvitation() {
             <span className="location-ornament" aria-hidden="true">✦</span>
             <a className="location-button" href={MAPS_URL} target="_blank" rel="noreferrer">
               <span className="location-button-label">View Location</span>
-              <span className="location-button-arrow" aria-hidden="true">↗</span>
             </a>
           </div>
         </section>
@@ -130,7 +129,7 @@ export default function CompactInvitation() {
       <section className="greeting-section reveal-on-scroll handwritten-reveal">
         <div className="gold-rule"><i /><b>✦</b><i /></div>
         <p className="eyebrow">Best regards from</p>
-        <p className="greeting-script">Shamna, Sahla, Rashid,<br />Kith and Kin</p>
+        <p className="greeting-script">Shamna, Sahla, Rashid, <span className="greeting-name-gap">Nahrin</span>,<br />Kith and Kin</p>
       </section>
 
       <section className="closing-section cinematic-close">
