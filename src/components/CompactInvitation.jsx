@@ -95,16 +95,32 @@ export default function CompactInvitation() {
           </div>
           <div className="event-divider" />
           <div className="event-item">
-            <span className="event-label">VENUE</span>
-            <strong>Bianco Castle</strong>
-            <small>Tirur, Kerala</small>
+            <span className="event-label">WEDDING CEREMONY</span>
+            <strong>11:00 AM</strong>
+            <small>Wednesday, 23 December 2026</small>
           </div>
         </div>
 
+        <section className="location-card reveal-on-scroll" aria-labelledby="location-heading">
+          <h2 id="location-heading">Meet us here!</h2>
+          <div className="location-panel">
+            <div className="location-map">
+              <img src={`${import.meta.env.BASE_URL}images/venue-map.png`} alt="Map showing the location of Bianco Castle" />
+            </div>
+            <p className="location-kicker">Wedding Ceremony</p>
+            <p className="location-name">
+              <span className="location-primary">Bianco Castle</span>
+              <span className="location-secondary">Tirur, Kerala</span>
+            </p>
+            <span className="location-ornament" aria-hidden="true">✦</span>
+            <a className="location-button" href={MAPS_URL} target="_blank" rel="noreferrer">
+              <span className="location-button-label">View Location</span>
+              <span className="location-button-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+
         <div className="actions reveal-on-scroll rise-reveal">
-          <a className="primary-action" href={MAPS_URL} target="_blank" rel="noreferrer">
-            Open in Google Maps <span>↗</span>
-          </a>
           <a className="secondary-action" href={GOOGLE_CALENDAR_URL} target="_blank" rel="noreferrer">
             Add to Google Calendar
           </a>
