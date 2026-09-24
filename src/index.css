@@ -1273,9 +1273,11 @@ img {
 .closing-section {
   padding: 3rem 1rem;
 
-  background: var(--burgundy-deep);
+  background:
+    radial-gradient(circle at 50% 40%, #fffdf8 0 18%, transparent 62%),
+    linear-gradient(135deg, var(--cream), #fff9ef 54%, var(--paper-deep));
 
-  color: var(--cream);
+  color: var(--ink);
 
   text-align: center;
 }
@@ -1290,9 +1292,7 @@ img {
     3rem
     1.5rem;
 
-  border:
-    1px solid
-    rgba(232, 213, 167, 0.4);
+  border: 1px solid rgba(184, 148, 82, 0.38);
 }
 
 
@@ -1302,7 +1302,7 @@ img {
     0
     1rem;
 
-  color: var(--gold-light);
+  color: var(--green);
 
   font:
     500
@@ -1344,7 +1344,7 @@ img {
     2.6rem
     var(--script);
 
-  color: #fff5df;
+  color: var(--burgundy);
 }
 
 
@@ -1358,11 +1358,18 @@ img {
    ========================================================= */
 
 .reveal-on-scroll {
-  animation:
-    softReveal
-    0.9s
-    cubic-bezier(.22, 1, .36, 1)
-    both;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(3px);
+  transition: opacity 0.8s cubic-bezier(.22, 1, .36, 1),
+    transform 0.8s cubic-bezier(.22, 1, .36, 1),
+    filter 0.8s cubic-bezier(.22, 1, .36, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
 }
 
 

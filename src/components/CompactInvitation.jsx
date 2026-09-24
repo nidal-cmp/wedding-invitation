@@ -23,6 +23,18 @@ export default function CompactInvitation() {
     return () => clearInterval(id)
   }, [])
 
+  useEffect(() => {
+    const elements = document.querySelectorAll('.reveal-on-scroll')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle('is-visible', entry.isIntersecting)
+      })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+
+    elements.forEach((element) => observer.observe(element))
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="compact-invitation">
       <section className="hero-section parallax-section" id="home">
